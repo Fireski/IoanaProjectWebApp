@@ -1,0 +1,1 @@
+Acesta este proiectul meu pentru ora de medii de programare.  Am creat un web app pentru monitorizare comenzi si servicii de la o firma de genul Top Tal care are multi angajati din toate domeniile, care atunci cand firma primeste comenzi de la clienti, angajatii acestora se ocupa de prestarea de servicii. 
