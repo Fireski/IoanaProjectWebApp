@@ -1,0 +1,54 @@
+﻿@page
+@model IoanaProjectWebApp.Pages.Orders.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Orders</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Orders.Angajati" class="control-label"></label>
+                <input asp-for="Orders.Angajati" class="form-control" />
+                <span asp-validation-for="Orders.Angajati" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Orders.Services" class="control-label"></label>
+                <input asp-for="Orders.Services" class="form-control" />
+                <span asp-validation-for="Orders.Services" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Orders.Client" class="control-label"></label>
+                <input asp-for="Orders.Client" class="form-control" />
+                <span asp-validation-for="Orders.Client" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Orders.Date" class="control-label"></label>
+                <input asp-for="Orders.Date" class="form-control" />
+                <span asp-validation-for="Orders.Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Orders.Status" class="control-label"></label>
+                <input asp-for="Orders.Status" class="form-control" />
+                <span asp-validation-for="Orders.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
