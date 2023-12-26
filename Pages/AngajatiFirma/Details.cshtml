@@ -1,0 +1,55 @@
+﻿@page
+@model IoanaProjectWebApp.Pages.AngajatiFirma.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Angajati</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Angajati.Nume)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Angajati.Nume)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Angajati.Prenume)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Angajati.Prenume)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Angajati.DataAngajarii)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Angajati.DataAngajarii)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Angajati.Departament)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Angajati.Departament)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Angajati.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Angajati.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Angajati.PhoneNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Angajati.PhoneNumber)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Angajati.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

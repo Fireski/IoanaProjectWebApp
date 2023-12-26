@@ -15,5 +15,6 @@ namespace IoanaProjectWebApp.Data
         }
 
         public DbSet<IoanaProjectWebApp.Models.Monitorizare> Orders { get; set; } = default!;
+        public DbSet<IoanaProjectWebApp.Models.Angajati> Angajati { get; set; } = default!;
     }
 }
