@@ -7,7 +7,7 @@ namespace IoanaProjectWebApp.Models
         public int ID { get; set; }
 
         public int? AngajatiID { get; set; }
-        public Angajati Angajat { get; set; } 
+        public Angajati Angajat { get; set; }
 
         public string Services { get; set; }
         public string Client { get; set; }

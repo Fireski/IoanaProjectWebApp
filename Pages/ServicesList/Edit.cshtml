@@ -1,0 +1,45 @@
+﻿@page
+@model IoanaProjectWebApp.Pages.ServicesList.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Services</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Services.ID" />
+            <div class="form-group">
+                <label asp-for="Services.Serviciu" class="control-label"></label>
+                <input asp-for="Services.Serviciu" class="form-control" />
+                <span asp-validation-for="Services.Serviciu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Services.PretPerHour" class="control-label"></label>
+                <input asp-for="Services.PretPerHour" class="form-control" />
+                <span asp-validation-for="Services.PretPerHour" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Services.Descriere" class="control-label"></label>
+                <input asp-for="Services.Descriere" class="form-control" />
+                <span asp-validation-for="Services.Descriere" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
